@@ -1,6 +1,6 @@
 {
   "name": "billed",
-  "version": "0.1.2",
+  "version": "0.1.1",
   "description": "Generate professional PDF invoices from your terminal",
   "author": "Alex",
   "keywords": [
