@@ -126,13 +126,6 @@
       "validateError": "Required",
       "required": true
     },
-    "logo": {
-      "type": "input",
-      "name": "logo",
-      "message": "Your logo path:",
-      "transform": "NaN",
-      "required": false
-    },
     "email": {
       "type": "input",
       "name": "email",
@@ -208,6 +201,13 @@
       "transform": "NaN",
       "required": false,
       "default": "white"
+    },
+    "logoPath": {
+      "type": "input",
+      "name": "logoPath",
+      "message": "Your logo path:",
+      "transform": "NaN",
+      "required": false
     }
   }
 }

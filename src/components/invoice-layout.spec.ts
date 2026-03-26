@@ -93,7 +93,7 @@ describe("build layout", () => {
       expect(text[2]).toEqual(">billed");
       expect(fillColor[1]).toEqual("#008043");
       expect(fillColor[2]).toEqual("black");
-      expect(link[0]).toEqual([275, 940, 50, 8, "https://google.com/"]);
+      expect(link[0]).toEqual([275, 940, 50, 8, "https://billed.dev/"]);
     });
   });
 });
