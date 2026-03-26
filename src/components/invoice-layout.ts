@@ -56,5 +56,5 @@ export async function createLayout(doc: PDFKit.PDFDocument) {
     .text(companyLogo)
     .fillColor("black");
 
-  doc.link(x, y, width, height, "https://google.com/");
+  doc.link(x, y, width, height, "https://billed.dev/");
 }
