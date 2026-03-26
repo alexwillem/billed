@@ -1,0 +1,213 @@
+{
+  "clientProfile": {
+    "name": {
+      "type": "input",
+      "name": "name",
+      "message": "Client name:",
+      "transform": "NaN",
+      "validateError": "Client name is required",
+      "required": true
+    },
+    "email": {
+      "type": "input",
+      "name": "email",
+      "message": "Client email:",
+      "transform": "NaN",
+      "pattern": "^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "validateError": "Please enter a valid email",
+      "required": false
+    },
+    "address": {
+      "street": {
+        "type": "input",
+        "name": "street",
+        "message": "Client street & number:",
+        "transform": "NaN",
+        "required": false
+      },
+      "city": {
+        "type": "input",
+        "name": "city",
+        "message": "Client city:",
+        "transform": "NaN",
+        "required": false
+      },
+      "postal": {
+        "type": "input",
+        "name": "postal",
+        "message": "Client postal-code:",
+        "transform": "NaN",
+        "required": false
+      },
+      "country": {
+        "type": "input",
+        "name": "country",
+        "message": "Client country:",
+        "transform": "NaN",
+        "pattern": "^[a-zA-Z]{0,}$",
+        "validateError": "Required",
+        "required": false
+      }
+    },
+    "phoneNumber": {
+      "type": "input",
+      "name": "phoneNumber",
+      "message": "Client's phone nr:",
+      "transform": "NaN",
+      "pattern": "^[0-9]*$",
+      "validateError": "Please enter a valid number or leave blank.",
+      "required": false
+    }
+  },
+  "projectDetails": {
+    "invoiceNumber": {
+      "type": "number",
+      "name": "invoiceNumber",
+      "message": "Invoice Nr:",
+      "transform": "NaN",
+      "pattern": "^[0-9]*$",
+      "validateError": "set a numeric invoice ID",
+      "required": true
+    },
+    "currency": {
+      "type": "input",
+      "name": "currency",
+      "message": "Payment currency (e.g. EUR or $):",
+      "required": true
+    },
+    "paymentDueDate": {
+      "type": "number",
+      "name": "paymentDueDate",
+      "message": "Max. days to pay:",
+      "transform": "^[0-9]*$",
+      "validateError": "Days must at least be 0",
+      "required": true
+    },
+    "paymentLink": {
+      "type": "input",
+      "name": "paymentLink",
+      "message": "Payment link:",
+      "transform": "NaN",
+      "required": false
+    },
+    "activity": {
+      "type": "input",
+      "name": "activity",
+      "message": "Activity {{ messageUnit }}:",
+      "transform": "NaN",
+      "validateError": "Description is required",
+      "required": true
+    },
+    "rate": {
+      "type": "number",
+      "name": "rate",
+      "message": "Rate {{ currency }}:",
+      "transform": "NaN",
+      "pattern": "^[0-9]*$",
+      "validateError": "Rate must at least be 0",
+      "required": true
+    },
+    "hours": {
+      "type": "number",
+      "name": "hours",
+      "message": "Hours worked:",
+      "transform": "NaN",
+      "pattern": "^[0-9]*$",
+      "validateError": "Hours must be greater than 0",
+      "required": true
+    }
+  },
+  "userProfile": {
+    "name": {
+      "type": "input",
+      "name": "name",
+      "message": "Your business name:",
+      "transform": "NaN",
+      "validateError": "Required",
+      "required": true
+    },
+    "logo": {
+      "type": "input",
+      "name": "logo",
+      "message": "Your logo path:",
+      "transform": "NaN",
+      "required": false
+    },
+    "email": {
+      "type": "input",
+      "name": "email",
+      "message": "Your email:",
+      "transform": "NaN",
+      "pattern": "[^\\s@]+@[^\\s@]+\\.[^\\s@]+$",
+      "validateError": "Invalid email",
+      "required": false
+    },
+    "address": {
+      "street": {
+        "type": "input",
+        "name": "street",
+        "message": "Your street & number:",
+        "transform": "NaN",
+        "required": false
+      },
+      "city": {
+        "type": "input",
+        "name": "city",
+        "message": "Your city:",
+        "transform": "NaN",
+        "required": false
+      },
+      "postal": {
+        "type": "input",
+        "name": "postal",
+        "message": "Your postal-code:",
+        "transform": "NaN",
+        "required": false
+      },
+      "country": {
+        "type": "input",
+        "name": "country",
+        "message": "Your country:",
+        "transform": "NaN",
+        "pattern": "^[a-zA-Z]{0,}$",
+        "validateError": "Required",
+        "required": true
+      }
+    },
+    "bank": {
+      "type": "input",
+      "name": "bank",
+      "message": "Bank name:",
+      "transform": "NaN",
+      "required": true
+    },
+    "account": {
+      "type": "input",
+      "name": "acount",
+      "message": "Bank account:",
+      "transform": "NaN",
+      "required": true
+    },
+    "vatRate": {
+      "type": "number",
+      "name": "vatRate",
+      "message": "Local VAT rate",
+      "transform": "NaN",
+      "pattern": "^[0-9]{1,2}$",
+      "validateError": "Value must be between 0 and 100",
+      "required": true,
+      "default": 0
+    }
+  },
+  "pdfStyle": {
+    "theme": {
+      "type": "select",
+      "choices": ["light", "dark"],
+      "name": "theme",
+      "message": "PDF theme:",
+      "transform": "NaN",
+      "required": false,
+      "default": "white"
+    }
+  }
+}
