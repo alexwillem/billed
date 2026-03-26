@@ -28,7 +28,6 @@ export interface AddressPrompts {
 }
 
 export interface UserProfilePrompts extends ClientProfilePrompts {
-  logo: Prompt;
   taxId: Prompt;
   account: Prompt;
   vatRate: Prompt;
@@ -46,6 +45,7 @@ export interface ProjectDetailsPrompts {
 
 export interface PdfStylePrompts {
   theme: Prompt;
+  logoPath: Prompt;
 }
 
 export type ProjectPrompts =

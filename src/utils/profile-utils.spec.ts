@@ -39,6 +39,7 @@ describe("for projectDetails", () => {
   let mockDoc: any;
   let projectDetailsPrompt: any;
   let userProfilePrompt: any;
+  let pdfStylePrompts: any;
   let mockProjectContract: any;
   const mockGet = vi.fn();
   const mockUpdate = vi.fn();
@@ -49,6 +50,7 @@ describe("for projectDetails", () => {
 
       projectDetailsPrompt = rawPrompts.projectDetails;
       userProfilePrompt = rawPrompts.userProfile;
+      pdfStylePrompts = rawPrompts.pdfStyle;
 
       mockDoc = new MockPDFDocument() as unknown as PDFKit.PDFDocument;
       mockProjectContract = structuredClone(mockContractInstance);
@@ -69,6 +71,7 @@ describe("for projectDetails", () => {
         ProfileEnums.PROJECT_DETAILS as ProfileKey,
       );
       createProfile(userProfilePrompt, ProfileEnums.USER_PROFILE as ProfileKey);
+      createProfile(pdfStylePrompts, ProfileEnums.PDF_STYLE as ProfileKey);
     });
 
     it("should build prompts", async () => {
@@ -84,9 +87,12 @@ describe("for projectDetails", () => {
         address: userProfilePrompt.address,
         bank: userProfilePrompt.bank,
         email: userProfilePrompt.email,
-        logo: userProfilePrompt.logo,
         name: userProfilePrompt.name,
         vatRate: userProfilePrompt.vatRate,
+      });
+      expect(promptManager.buildPrompts).toHaveBeenCalledWith({
+        logoPath: pdfStylePrompts.logoPath,
+        theme: pdfStylePrompts.theme,
       });
     });
     it("should update projectManager", () => {
