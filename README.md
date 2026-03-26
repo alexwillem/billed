@@ -32,11 +32,13 @@ npm install -g billed
 
 ### Usage
 1. Create a new directory and include your logo (.svg or .png).
-2. run the `bill` command:
+2. Run any `bill` command:
 
 ```bash
 bill [command] [input]
 ```
+
+3. Locate your invoice at `your-directory/output/invoices/invoice-<invoiceNr>.pdf`
 
 ---
 
