@@ -1,6 +1,6 @@
 {
   "name": "billed",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Generate professional PDF invoices from your terminal",
   "author": "Alex",
   "keywords": [
@@ -14,7 +14,7 @@
   "homepage": "https://billed.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/willemhubert/billed"
+    "url": "https://github.com/alexwillem/billed"
   },
   "files": [
     "dist"
