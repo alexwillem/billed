@@ -14,7 +14,7 @@
   "homepage": "https://billed.dev",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexwillem/billed"
+    "url": "git+https://github.com/alexwillem/billed.git"
   },
   "files": [
     "dist"
