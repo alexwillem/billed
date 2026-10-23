@@ -196,7 +196,7 @@ You can configure your invoice details using a JSON file created in `your-direct
       "textColor": "#121212",
       "backgroundColor": "#F2F2F2"
     },
-    "logoPath": "/Users/alex_daemen/Documents/web_projects/billed/billed-pdf/src/assets/logo/icon-only.svg"
+    "logoPath": "/Users/john_smith/Documents/web_projects/billed/billed-pdf/src/assets/logo/icon-only.svg"
   },
   "projectDetails": {
     "currency": "$",

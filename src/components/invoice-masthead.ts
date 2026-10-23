@@ -22,7 +22,6 @@ export async function drawMasthead(doc: PDFKit.PDFDocument): Promise<void> {
   const userLogo = projectContractManager.get().pdfStyle?.logoPath;
 
   if (userLogo && userLogo.trim() !== "") {
-    //logoPath must be full path, e.g.: /Users/alex/personal-projects/billed/billed-icon-only.svg
     const logoPath = path.resolve(process.cwd(), userLogo);
     const svgContent = fs.readFileSync(logoPath, "utf8");
 
